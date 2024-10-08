@@ -1,0 +1,78 @@
+:root{
+    --blanco    : #ffffff;
+    --negro     : #212121;
+    --primario  : #f0f8ff;
+    --secundario: #0097a7;
+    --gris      : #757575;
+}
+html{
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: #201c1c;
+    color: aliceblue;*/
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--negro);
+}
+
+
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.navegacion-principal{
+    display: flex;
+    background: #212121;
+    
+}
+.navegacion-principal a{
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.navegacion-principal a:hover{
+
+    background: black;
+    color: var(--blanco);
+}
+
+.hero  h2{
+    background-image: url(../img/Principal\ O.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    height: 40vh;
+    color: var(--blanco); 
+    padding: 20px;
+    position: relative;
+}
+.Contenido-hero{
+position: absolute;
+background-color: red;
+width:2rem;
+height: 2rem;
+}
